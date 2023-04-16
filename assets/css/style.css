@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Montserrat&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 75%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    transition: box-shadow 0.7s ease-out;
+}
+header span{
+    margin-right: 7px;
+}
+.home-name-image img{
+    width: 35px; 
+    height: auto;
+    margin-right: 7px;
+}
+.home-name{
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+}
+.home-buttons{
+    display: flex;
+    list-style-type: none;
+}
+
+.home-buttons li a{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 75px;
+}
+
+.home-buttons li a:hover{
+    color: green;
+}
+
+
+
+
+
+.home-welcome{
+    margin-top: 150px;
+    height: calc(100vh - 176px);
+}
+.welcome{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.welcome-texts{
+    color: black;
+}
+
+.welcome-texts h3{
+    color:rgb(243, 52, 52);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.welcome-texts h2{
+    font-size: 49px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.welcome-texts h4{
+    font-size: 12px;
+    font-weight: 100;
+}
+.button{
+    margin-top: 70px;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 14px 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color:black;
+    border-radius: 5px;
+}
+.button:hover , .active{
+    background-color: green;
+}
+
+
+.welcome-image img{
+    display: inline-block;
+    width: 480px;
+    height: auto;
+    animation: float 2s ease-in-out infinite;;
+}
+
+@keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+.welcome-social{
+    margin-top: 110px;
+    display: inline-flex;
+}
+
+.circulo{
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    transition: padding 0.2s;
+}
+.circulo:hover{
+    background-color: black;
+    padding: 2px;
+}
+.social-media-image{
+    width: 74px;
+    
+}
+
+
+
+
+
+.title-section{
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    width: 20%;
+}
+.about-me-section, .section-projects{
+    margin-top: 40px;
+}
+.about-me{
+    margin-top: 25px;
+    text-align: center;
+}
+.profile{
+    display: inline-block;
+    
+    padding: 25px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.profile img{
+    display: inline-block;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.profile .name{
+    text-align: start;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.profile-text{
+    font-size: 14px;
+    max-width: 50%;
+    margin: auto;
+}
+
+
+.first-title{
+    display: flex; 
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.first-title img{
+    margin-left: 7px; 
+    width: 40px; 
+    height: auto;
+}
+.second-title{
+    text-align: center;
+    color:#888;
+    margin-bottom: 10px;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.linguagem{
+    width: 15%;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+}
+.linguagem img{
+    width: 75%;
+    height: auto;
+}
+
+.linguagem-name{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.linguagem .button{
+    margin-top: 0;
+    cursor: pointer;
+}
+
+
+
+.projects-buttons{
+    cursor: pointer;
+}
+.projects-buttons .button{
+    margin: 0;
+}
+
+.projects-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.project img{
+    width: 275px;
+    height: 175px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: filter 0.2s ease-out;
+}
+
+.project img:hover{
+    filter: brightness(.1);
+
+}
+
+.project-resume {
+    position: absolute;
+    bottom: 65px;
+    left: -15px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.project:hover .project-resume {
+    opacity: 1;
+}
+.project {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 97%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.project:hover::before {
+    opacity: 1;
+}
+
+
+input{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    width: 400px;
+    outline: none;
+    padding: 12px;
+}
+
+button{
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: red;
+}
+
+
+footer{
+    background-color: #000000;
+    height: 250px;
+}
+.footer-container .up{
+    width: 70px;
+    cursor: pointer;
+    height: auto;
+    right: 70px;
+    position: absolute;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.footer-adress{
+    color: white;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+.mobile-show{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+
+    .container{
+        width: 85%;
+    }
+    header{
+        width: 85%;
+    }
+    .home-name{
+        font-size: 22px;
+    }
+    .home-buttons li a{
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    .welcome-texts h2{
+        font-size: 27px;
+    }
+    .welcome-image img{
+        width: 250px;
+        height: auto;
+    }
+    .circulo{
+        width: 50px;
+        height: 50px;
+    }
+    .linguagem{
+        margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .container{
+        width: 85%;
+    }
+    header{
+        width: 85%;
+    }
+    .welcome-image img{
+        display: none;
+    }
+    .home-buttons li a{
+        font-size: 14px;
+        margin-right: 7px;
+        color: white;
+    }
+    .welcome-texts h2{
+        font-size: 35px;
+    }
+    .welcome-texts h3{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .welcome-texts .button{
+        margin-top: 25px;
+        padding: 10px;
+    }
+    .home-buttons{
+        display: none;
+    }
+    input{
+        width: 75%;
+    }
+    .linguagem{
+        width: 15%;
+    }
+    .linguagem-name{
+        font-size: 13px;
+    }
+    .linguagem img{
+        width: 100%;
+    }
+    .welcome-social{
+        margin-top: 10px;
+    }
+    .profile-text{
+        max-width: 90%;
+    }
+    .skills .button{
+        padding: 10px 7px;
+        font-size: 9px;
+    }
+    .footer-container{
+        padding: 10px;
+        display: inline-block;
+    }
+    .mobile-show img{
+        display: block;
+        width: 50px;
+        height: auto;
+        padding: 5px;
+    }
+    .mobile-show{
+        display: block;
+    }
+    .mobile-nav{
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.5s;
+        background-color: rgba(0, 0, 0, 0.363);
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px
+    }
+  }

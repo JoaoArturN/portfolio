@@ -175,6 +175,33 @@ header span{
     margin-bottom: 30px;
 }
 
+.curso-views{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.curso{
+    margin-right: 40px;
+    padding: 7px 10px;
+    width: 28%;
+    background-color: #121e38;
+    border-radius: 10px;
+    color: white;
+}
+.curso img{
+    margin-top: 30px;
+    width: 30%;
+    height: auto;
+}
+.curso h4{
+    color: #888;
+}
+.curso h6{
+    font-style: italic;
+}
+.curso h4, .curso h3 , .curso h5, .curso h6{
+    margin-top: 8px;
+}
 .profile img{
     display: inline-block;
     border-radius: 100%;
@@ -193,6 +220,10 @@ header span{
     max-width: 50%;
     margin: auto;
 }
+
+
+
+
 
 
 .first-title{
@@ -307,26 +338,23 @@ header span{
 .project:hover::before {
     opacity: 1;
 }
-
-
-input{
-    border-radius: 5px;
-    margin-bottom: 5px;
-    border: 1px solid black;
-    width: 400px;
-    outline: none;
-    padding: 12px;
+.project-view{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.project-view img{
+    width: 40%;
+    border: #f3d00b 3px solid;
+    margin-right: 10px;
+}
+.project-about{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
-button{
-    padding: 12px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-}
-button:hover{
-    background-color: red;
-}
+
 
 
 footer{
@@ -387,6 +415,29 @@ html, body {
     .linguagem{
         margin-right: 25px;
     }
+    .curso-views{
+        display: inline-block;
+    }
+    .curso{
+        margin: auto;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .curso h5{
+        text-align: start;
+    }
+    .curso img{
+        width: 47%;
+    }
+    .project-view{
+        display: block;
+    }
+    .project-view img{
+        width: 100%;
+    }
+    .project-about{
+        width: 100%;
+    }
   }
 
   @media screen and (max-width: 500px) {
@@ -417,9 +468,6 @@ html, body {
     }
     .home-buttons{
         display: none;
-    }
-    input{
-        width: 75%;
     }
     .linguagem{
         width: 15%;
@@ -463,5 +511,30 @@ html, body {
         width: 100%;
         box-sizing: border-box;
         padding: 20px
+    }
+
+
+    .curso-views{
+        display: inline-block;
+    }
+    .curso{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .curso h5{
+        text-align: start;
+    }
+    .curso img{
+        width: 47%;
+    }
+    .project-view{
+        display: block;
+    }
+    .project-view img{
+        width: 100%;
+    }
+    .project-about{
+        width: 100%;
     }
   }
